@@ -11,7 +11,7 @@ var bookController = function(bookService, nav){
 			};
 
 	var getIndex = function (req, res){
-			var url = 'mongodb://localhost:27017/local';
+			var url = 'mongodb://ranli:123456@ds033126.mlab.com:33126/heroku_p7dh0spc';
 
 			mongodb.connect(url,function(err, db){
 
@@ -30,7 +30,7 @@ var bookController = function(bookService, nav){
 
 	var getById = function (req, res){
 			var id =  new objId(req.params.id);
-			var url = 'mongodb://localhost:27017/local';
+			var url = 'mongodb://ranli:123456@ds033126.mlab.com:33126/heroku_p7dh0spc';
 
 			mongodb.connect(url,function(err, db){
 
