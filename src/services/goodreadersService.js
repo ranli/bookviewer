@@ -6,7 +6,7 @@ var parser = xml2js.Parser({explicitArray: false});
 var goodreadersService = function(){
 	var getBookById = function(id, callback){
 		var options = {
-			host: 'https://www.goodreads.com',
+			host: 'www.goodreads.com',
 			path: '/book/show/'+ id +'?format=xml&key=PGTDP8oqCA5M6q4yWFCGA'
 		};
 
