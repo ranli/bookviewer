@@ -4,6 +4,11 @@ var cookieParser = require('cookie-parser');
 var passport = require('passport');
 var session = require('express-session');
 var flash = require('connect-flash');
+var bookService = require('./src/services/goodreadersService')();
+
+bookService.getBookById(2243,function(err,res){
+	console.log(res);
+});
 
 var app = express();
 
